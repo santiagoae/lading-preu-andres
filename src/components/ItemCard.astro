@@ -1,0 +1,13 @@
+---
+interface Props {
+  description: string;
+  bgColor: string;
+}
+const { description, bgColor } = Astro.props;
+---
+
+<main
+  class=`min-h-28 text-white flex items-center justify-center px-10 py-4 rounded-lg ${bgColor} hover:scale-105 transition duration-300 cursor-context-menu`
+>
+  <p>{description}</p>
+</main>
