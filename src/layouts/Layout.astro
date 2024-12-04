@@ -53,25 +53,72 @@ const { title, description } = Astro.props;
 </html>
 
 <style is:global>
+  @font-face {
+    font-family: "rubik-r";
+    src: url("/fonts/Rubik-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "rubik-l";
+    src: url("/fonts/Rubik-Light.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "rubik-i";
+    src: url("/fonts/Rubik-Italic.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "rubik-sb";
+    src: url("/fonts/Rubik-SemiBold.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "rubik-bold";
+    src: url("/fonts/Rubik-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "rubik-black";
+    src: url("/fonts/Rubik-Black.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+  }
+  root {
+    --dark-blue: #342a61;
+    --sky-blue: #0eb9dc;
+  }
+
   html {
     scroll-behavior: smooth;
+    font-family: rubik-r;
   }
   button {
     @apply bg-sky-900 text-white font-semibold text-[0.6rem] min-w-32 min-h-10 py-2 px-4 rounded-xl;
   }
   h1 {
     @apply text-2xl font-bold;
+    font-family: rubik-black;
   }
   h2 {
     @apply text-xl font-bold;
+    font-family: rubik-r;
   }
   h3 {
     @apply text-lg font-bold;
+    font-family: rubik-sb;
   }
   h4 {
     @apply text-base font-bold;
+    font-family: rubik-l;
   }
   p {
     @apply text-[0.88rem] font-bold;
+    font-family: rubik-r;
   }
 </style>
