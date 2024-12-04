@@ -4,7 +4,7 @@ import ScheduleCard from "./ScheduleCard.astro";
 const { id } = Astro.props;
 ---
 
-<main id={id} class="p-6 text-pretty">
+<main id={id} class="p-6 text-pretty lg:p-20">
   <h1>Horarios</h1>
   <section class="mt-4">
     <p>
@@ -14,7 +14,7 @@ const { id } = Astro.props;
     </p>
   </section>
 
-  <section>
+  <section class="lg:flex gap-12">
     <ScheduleCard
       iconBgStyles="bg-sky-blue size-16"
       iconClass="fa-regular fa-clock text-3xl"

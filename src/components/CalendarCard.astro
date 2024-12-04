@@ -9,7 +9,9 @@ interface Props {
 const { iconClass, title, description, extraInfo = "" } = Astro.props;
 ---
 
-<main class="flex p-8 shadow-xl rounded-xl justify-center items-center gap-4">
+<main
+  class="flex p-8 shadow-xl rounded-xl justify-center items-center gap-4 lg:w-full"
+>
   <i class=`${iconClass}`></i>
   <section class="flex flex-col">
     <h1>{title}</h1>

@@ -5,33 +5,38 @@ import CallToActionButtons from "./CallToActionButtons.astro";
 const { id } = Astro.props;
 ---
 
-<main id={id} class="p-6 text-pretty">
+<main id={id} class="p-6 text-pretty lg:p-20">
   <h1 class="">Calendario</h1>
-  <section class="flex flex-col gap-4 text-pretty mt-4">
-    <p class="">
+  <section
+    class="flex flex-col gap-4 text-pretty mt-4 lg:gap-6 lg:flex-row lg:items-center lg:justify-center"
+  >
+    <p class="lg:w-[450px]">
       El examen de la Universidad de Antioquia es un reto significativo, por eso
       diseñamos un ciclo de preparación de 9 meses consecutivos para garantizar
       que nuestros estudiantes estén completamente preparados y logren ingresar
       a la carrera de sus sueños en esta prestigiosa universidad.
     </p>
-    <CalendarCard
-      title="Inicio"
-      description="Lunes 20 de enero de 2025"
-      iconClass="fa-solid fa-person-running text-sky-blue text-6xl"
-    />
-    <CalendarCard
-      title="Finaliza"
-      description="Viernes 17 de octubre"
-      iconClass="fa-solid fa-medal text-red-500 text-5xl"
-      extraInfo="(o una semana antes del examen de admisión)."
-    />
-
+    <div>
+      <CalendarCard
+        title="Inicio"
+        description="Lunes 20 de enero de 2025"
+        iconClass="fa-solid fa-person-running text-sky-blue text-6xl"
+      />
+      <CalendarCard
+        title="Finaliza"
+        description="Viernes 17 de octubre"
+        iconClass="fa-solid fa-medal text-red-500 text-5xl"
+        extraInfo="(o una semana antes del examen de admisión)."
+      />
+    </div>
+  </section>
+  <section class="flex flex-col gap-4 text-pretty mt-4 lg:mt-16">
     <p>
       Habrá recesos únicamente durante la Semana Santa y dos de las tres semanas
       de vacaciones, para un total aproximado de 34 semanas de clases efectivas.
     </p>
+    <CallToActionButtons>
+      <button>Conoce nuestros docentes</button>
+    </CallToActionButtons>
   </section>
-  <CallToActionButtons>
-    <button>Conoce nuestros docentes</button>
-  </CallToActionButtons>
 </main>
