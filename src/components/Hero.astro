@@ -5,16 +5,16 @@ const { id } = Astro.props;
 
 <main
   id={id}
-  class="h-dvh p-6 flex flex-col items-center justify-center"
+  class="h-dvh p-6 flex flex-col items-center justify-center sm:h-auto lg:p-20"
   style="mask-image: linear-gradient(black 94%, transparent); background: linear-gradient(to right, rgba(52, 42, 97, 0.7), rgba(52, 42, 97, 0.7)), url('/images/heroImage.webp') no-repeat center center; background-size: cover;"
 >
   <section
-    class="text-white text-center flex flex-col items-center gap-2 max-w-[1300px]"
+    class="text-white text-center flex flex-col items-center gap-2 max-w-[1000px]"
   >
     <img
       src="/images/academikos-logo-preuniversitario-udea-universidad-nacional.webp"
       alt="academikos-logo-preuniversitario-udea-universidad-nacional"
-      class="filter grayscale brightness-0 invert h-16"
+      class="filter grayscale brightness-0 invert h-16 md:h-24"
     />
 
     <span>APRENDE CON NOSOTROS</span>
@@ -31,7 +31,7 @@ const { id } = Astro.props;
       Universidad Nacional</small
     >
 
-    <div class="grid grid-cols-3 gap-2">
+    <div class="grid grid-cols-3 gap-2 sm:gap-4 md:grid-cols-4">
       <SectionCard
         description="Calendario"
         iconClass="fa-regular fa-calendar-days"

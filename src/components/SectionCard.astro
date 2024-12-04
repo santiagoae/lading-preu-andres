@@ -10,8 +10,8 @@ const { description, iconClass, reference } = Astro.props;
 
 <a
   href=`#${reference}`
-  class="flex flex-col items-center justify-center px-4 py-2 bg-white/10 rounded-md hover:bg-white/20 transition cursor-pointer"
+  class="flex flex-col items-center justify-center px-4 py-2 bg-white/10 rounded-md hover:bg-white/20 transition cursor-pointer sm:gap-4 sm:w-[190px] sm:h-[120px]"
 >
-  <i class=`${iconClass} text-2xl`></i>
-  <p class="text-[0.6rem]">{description}</p>
+  <i class=`${iconClass} text-2xl sm:text-[3rem]`></i>
+  <p class="text-[0.6rem] sm:text-[1rem]">{description}</p>
 </a>
