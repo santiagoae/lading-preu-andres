@@ -1,8 +1,10 @@
 ---
 import RegisterButton from "./RegisterButton.astro";
+
+const { id } = Astro.props;
 ---
 
-<main class="p-10">
+<main id={id} class="p-10 text-pretty">
   <h1 class="">Calendario</h1>
   <section class="flex flex-col gap-4 text-pretty">
     <p class="">

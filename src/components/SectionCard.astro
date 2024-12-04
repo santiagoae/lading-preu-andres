@@ -2,14 +2,16 @@
 interface Props {
   description: string;
   iconClass: string;
+  reference: string;
 }
 
-const { description, iconClass } = Astro.props;
+const { description, iconClass, reference } = Astro.props;
 ---
 
-<main
+<a
+  href=`#${reference}`
   class="flex flex-col items-center justify-center px-4 py-2 bg-white/10 rounded-md hover:bg-white/20 transition cursor-pointer"
 >
   <i class=`${iconClass} text-2xl`></i>
   <p class="text-[0.6rem]">{description}</p>
-</main>
+</a>
