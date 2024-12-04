@@ -4,12 +4,24 @@ const { id } = Astro.props;
 
 <main id={id} class="p-10 text-pretty">
   <h1>Matricúlate</h1>
-  <p>
-    ¡No dejes pasar la oportunidad de asegurar tu lugar en la Universidad de
-    Antioquia! Matricúlate hoy en academikos y comienza tu preparación con los
-    mejores docentes y recursos. Realiza tu pago a la cuenta de ahorros
-    Bancolombia 10-1234567 y envía el soporte de pago al número de teléfono
-    +0573000000000. ¡Da el primer paso hacia tu futuro universitario y alcanza
-    la carrera de tus sueños con nosotros!
-  </p>
+  <section class="mt-4 flex flex-col gap-4">
+    <p>
+      ¡No dejes pasar la oportunidad de asegurar tu lugar en la Universidad de
+      Antioquia! Matricúlate hoy en <span class="text-dark-blue font-rubik-bold"
+        >academikos</span
+      > y comienza tu preparación con los mejores docentes y recursos.
+    </p>
+    <p>
+      Realiza tu pago a la cuenta de <span
+        class="text-dark-blue font-rubik-bold"
+        >ahorros Bancolombia 10-1234567</span
+      > y envía el soporte de pago al número de teléfono <span
+        class="text-dark-blue font-rubik-bold">+0573000000000.</span
+      >
+    </p>
+    <p>
+      ¡Da el primer paso hacia tu futuro universitario y alcanza la carrera de
+      tus sueños con nosotros!
+    </p>
+  </section>
 </main>
