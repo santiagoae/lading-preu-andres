@@ -1,5 +1,6 @@
 ---
-import RegisterButton from "./RegisterButton.astro";
+import CallToActionButtons from "./CallToActionButtons.astro";
+import ScheduleCard from "./ScheduleCard.astro";
 const { id } = Astro.props;
 ---
 
@@ -14,16 +15,20 @@ const { id } = Astro.props;
   </section>
 
   <section>
-    Lunes a jueves: 7:30 p.m. a 9:30 p.m. Este horario nocturno asegura que
-    tanto estudiantes que estudien en la mañana o en la tarde, puedan conectarse
-    sin inconvenientes. Viernes cada 15 días: 2:00 p.m. a 5:00 p.m. Simulacros
-    presenciales en el Colegio Corazonista de Medellín. Estos simulacros son
-    esenciales para que los estudiantes practiquen en un ambiente real de examen
-    y midan su progreso de manera efectiva.
+    <ScheduleCard
+      iconBgStyles="bg-sky-blue size-16"
+      iconClass="fa-regular fa-clock text-3xl"
+      description="Lunes a jueves: 7:30 p.m. a 9:30 p.m."
+      extraInfo="Este horario nocturno asegura que tanto estudiantes que estudien en la mañana o en la tarde, puedan conectarse sin inconvenientes."
+    />
+    <ScheduleCard
+      iconBgStyles="bg-dark-blue size-16"
+      iconClass="fa-regular fa-clock text-3xl text-white"
+      description="Viernes cada 15 días: 2:00 p.m. a 5:00 p.m."
+      extraInfo="Simulacros presenciales en el Colegio Corazonista de Medellín. Estos simulacros son esenciales para que los estudiantes practiquen en un ambiente real de examen y midan su progreso de manera efectiva."
+    />
   </section>
-
-  <section class="flex">
-    <RegisterButton />
+  <CallToActionButtons>
     <button>Metodología de clases en vivo</button>
-  </section>
+  </CallToActionButtons>
 </main>

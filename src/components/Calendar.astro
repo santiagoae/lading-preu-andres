@@ -1,6 +1,6 @@
 ---
 import CalendarCard from "./CalendarCard.astro";
-import RegisterButton from "./RegisterButton.astro";
+import CallToActionButtons from "./CallToActionButtons.astro";
 
 const { id } = Astro.props;
 ---
@@ -17,7 +17,7 @@ const { id } = Astro.props;
     <CalendarCard
       title="Inicio"
       description="Lunes 20 de enero de 2025"
-      iconClass="fa-solid fa-person-running text-sky-700 text-6xl"
+      iconClass="fa-solid fa-person-running text-sky-blue text-6xl"
     />
     <CalendarCard
       title="Finaliza"
@@ -31,8 +31,7 @@ const { id } = Astro.props;
       de vacaciones, para un total aproximado de 34 semanas de clases efectivas.
     </p>
   </section>
-  <section class="flex gap-2 mt-4">
-    <RegisterButton />
+  <CallToActionButtons>
     <button>Conoce nuestros docentes</button>
-  </section>
+  </CallToActionButtons>
 </main>

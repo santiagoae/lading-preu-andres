@@ -1,0 +1,22 @@
+---
+interface Props {
+  iconBgStyles: string;
+  iconClass: string;
+  description: string;
+  extraInfo: string;
+}
+
+const { iconBgStyles, iconClass, description, extraInfo } = Astro.props;
+---
+
+<main class="p-8 text-pretty">
+  <section class="flex flex-col items-center justify-center gap-2 text-center">
+    <article
+      class=`rounded-full pg-4 ${iconBgStyles} flex justify-center items-center `
+    >
+      <i class=`${iconClass}`></i>
+    </article>
+    <p>{description}</p>
+    <small>{extraInfo}</small>
+  </section>
+</main>
