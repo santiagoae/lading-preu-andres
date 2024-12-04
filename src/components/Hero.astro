@@ -1,16 +1,60 @@
+---
+import SectionCard from "./SectionCard.astro";
+---
+
 <main
   class="h-dvh p-10 flex flex-col items-center justify-center"
-  style="background: linear-gradient(to right, rgba(28, 28, 29, 0.3), rgba(17, 17, 17, 0.3)),linear-gradient(to right, rgba(30, 106, 221, 0.4), rgba(30, 106, 221, 0.4)), url('/images/heroImage.webp') no-repeat center center; background-size: cover;"
+  style="background: linear-gradient(to right, rgba(28, 28, 29, 0.5), rgba(17, 17, 17, 0.5)),linear-gradient(to right, rgba(30, 106, 221, 0.4), rgba(30, 106, 221, 0.4)), url('/images/heroImage.webp') no-repeat center center; background-size: cover;"
 >
-  <section class="text-white text-center flex flex-col items-center gap-4">
-    <small>APRENDE CON NOSOTROS</small>
-    <h1>ESTUDIA CON EXPERTOS</h1>
+  <section class="text-white text-center flex flex-col items-center gap-2">
+    <span>APRENDE CON NOSOTROS</span>
+    <h1>TU ENTRADA A LA U</h1>
     <p class="font-semibold">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio id ipsam
-      distinctio voluptatibus dignissimos aspernatur impedit, accusamus laborum,
-      consequuntur aperiam est, officiis sapiente? Veniam minima dignissimos,
-      quaerat id est dolor?
+      Somos la preparación ideal para el examen de admisión a la Universidad de
+      Antioquia . Con el respaldo de experimentados docentes y materiales
+      diseñados para un óptimo aprendizaje, ofrecemos una experiencia
+      interactiva y dinámica que combina clases en tiempo real, simulacros
+      presenciales y módulos físicos.
     </p>
-    <button class="w-52">Obten tu curso</button>
+    <small class="opacity-45"
+      >Pronto ofreceremos cursos cortos para preparar el examen de admisión a la
+      Universidad Nacional</small
+    >
+
+    <div class="grid grid-cols-3 gap-2">
+      <SectionCard
+        description="Calendario"
+        iconClass="fa-regular fa-calendar-days"
+      />
+      <SectionCard description="Horarios" iconClass="fa-regular fa-clock" />
+      <SectionCard
+        description="Docentes"
+        iconClass="fa-solid fa-person-chalkboard"
+      />
+      <SectionCard
+        description="Clases en Vivo"
+        iconClass="fa-solid fa-house-laptop"
+      />
+      <SectionCard
+        description="Simulacros"
+        iconClass="fa-regular fa-newspaper"
+      />
+      <SectionCard
+        description="Precios"
+        iconClass="fa-solid fa-hand-holding-dollar"
+      />
+      <SectionCard
+        description="Qué Incluye?"
+        iconClass="fa-solid fa-box-open"
+      />
+      <SectionCard
+        description="Matricúlate"
+        iconClass="fa-solid fa-file-signature"
+      />
+      <SectionCard
+        description="Contacto"
+        iconClass="fa-regular fa-address-card"
+      />
+    </div>
   </section>
 </main>
