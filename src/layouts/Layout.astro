@@ -1,6 +1,15 @@
 ---
 import Calendar from "@components/Calendar.astro";
+import Classes from "@components/Classes.astro";
+import Contact from "@components/Contact.astro";
+import Footer from "@components/Footer.astro";
 import Hero from "@components/Hero.astro";
+import Instructors from "@components/Instructors.astro";
+import Items from "@components/Items.astro";
+import Pricing from "@components/Pricing.astro";
+import Registration from "@components/Registration.astro";
+import Schedule from "@components/Schedule.astro";
+import Simulation from "@components/Simulation.astro";
 
 interface Props {
   title: string;
@@ -31,6 +40,15 @@ const { title, description } = Astro.props;
   <body>
     <Hero />
     <Calendar />
+    <Schedule />
+    <Instructors />
+    <Classes />
+    <Simulation />
+    <Pricing />
+    <Items />
+    <Registration />
+    <Contact />
+    <Footer />
   </body>
 </html>
 
