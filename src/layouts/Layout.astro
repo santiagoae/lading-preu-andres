@@ -10,6 +10,7 @@ import Pricing from "@components/Pricing.astro";
 import Registration from "@components/Registration.astro";
 import Schedule from "@components/Schedule.astro";
 import Simulation from "@components/Simulation.astro";
+import CheckIcon from "@icons/circle-dashed-check.svg";
 
 interface Props {
   title: string;
@@ -103,7 +104,7 @@ const { title, description } = Astro.props;
     font-family: rubik-r;
   }
   button {
-    @apply bg-sky-900 text-white font-semibold text-[0.6rem] min-w-32 min-h-10 py-2 px-4 rounded-xl;
+    @apply bg-dark-blue text-white font-semibold text-[0.6rem] min-w-32 min-h-10 py-2 px-4 rounded-xl;
   }
   h1 {
     @apply text-2xl font-bold;
@@ -114,15 +115,41 @@ const { title, description } = Astro.props;
     font-family: rubik-r;
   }
   h3 {
-    @apply text-lg font-bold;
-    font-family: rubik-sb;
+    @apply text-lg;
+    font-family: rubik-i;
   }
   h4 {
-    @apply text-base font-bold;
+    @apply text-base;
     font-family: rubik-l;
   }
   p {
     @apply text-[0.88rem] font-bold;
     font-family: rubik-r;
+  }
+  ul {
+    list-style: none; /* Elimina las viñetas predeterminadas */
+    padding-left: 10px; /* Asegura espacio para las "viñetas" personalizadas */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  ul li {
+    position: relative;
+    padding-left: 28px; /* Espacio para el ícono */
+  }
+
+  ul li::before {
+    content: "";
+    display: inline-block;
+    width: 24px; /* Ajusta el ancho */
+    height: 24px; /* Ajusta la altura */
+    background-image: url("/src/icons/icono-check-udea-preu.webp"); /* Ruta del ícono */
+    background-size: contain; /* Ajusta el ícono dentro de las dimensiones */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    position: absolute; /* Posición relativa al elemento <li> */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
   }
 </style>

@@ -1,11 +1,12 @@
 ---
 import CallToActionButtons from "./CallToActionButtons.astro";
+
 const { id } = Astro.props;
 ---
 
 <main id={id} class="p-10 text-pretty">
   <h1>Clases en Vivo: Aprende, Practica y Triunfa</h1>
-  <section>
+  <section class="flex flex-col gap-4 mt-4">
     <p>
       En Académikos, nuestras clases en vivo están diseñadas para construir las
       habilidades necesarias para superar con éxito el examen de admisión de la
@@ -85,8 +86,7 @@ const { id } = Astro.props;
       carreras más exigentes.
     </p>
   </section>
-  <section class="flex">
-    <CallToActionButtons />
+  <CallToActionButtons>
     <button>Contáctanos</button>
-  </section>
+  </CallToActionButtons>
 </main>
