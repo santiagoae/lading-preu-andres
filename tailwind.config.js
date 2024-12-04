@@ -6,6 +6,9 @@ module.exports = {
       colors:{
         'dark-blue': '#342a61',
         'sky-blue': '#0eb9dc'
+      },
+      fontFamily:{
+        "rubik-bold":['rubik-bold']
       }
     },
   },
