@@ -1,0 +1,19 @@
+---
+interface Props {
+  iconClass: string;
+  title: string;
+  description: string;
+  extraInfo?: string;
+}
+
+const { iconClass, title, description, extraInfo = "" } = Astro.props;
+---
+
+<main class="flex p-8 shadow-xl rounded-xl justify-center items-center gap-4">
+  <i class=`${iconClass}`></i>
+  <section class="flex flex-col">
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <small>{extraInfo}</small>
+  </section>
+</main>

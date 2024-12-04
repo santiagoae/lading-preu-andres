@@ -1,4 +1,5 @@
 ---
+import CalendarCard from "./CalendarCard.astro";
 import RegisterButton from "./RegisterButton.astro";
 
 const { id } = Astro.props;
@@ -6,26 +7,31 @@ const { id } = Astro.props;
 
 <main id={id} class="p-10 text-pretty">
   <h1 class="">Calendario</h1>
-  <section class="flex flex-col gap-4 text-pretty">
+  <section class="flex flex-col gap-4 text-pretty mt-4">
     <p class="">
       El examen de la Universidad de Antioquia es un reto significativo, por eso
       diseñamos un ciclo de preparación de 9 meses consecutivos para garantizar
       que nuestros estudiantes estén completamente preparados y logren ingresar
       a la carrera de sus sueños en esta prestigiosa universidad.
     </p>
-
-    <p>
-      Las clases tendrán las siguientes fechas Inicio Lunes 20 de enero de 2025
-      Finaliza Viernes 17 de octubre (o una semana antes del examen de
-      admisión).
-    </p>
+    <CalendarCard
+      title="Inicio"
+      description="Lunes 20 de enero de 2025"
+      iconClass="fa-solid fa-person-running text-sky-700 text-6xl"
+    />
+    <CalendarCard
+      title="Finaliza"
+      description="Viernes 17 de octubre"
+      iconClass="fa-solid fa-medal text-red-500 text-5xl"
+      extraInfo="(o una semana antes del examen de admisión)."
+    />
 
     <p>
       Habrá recesos únicamente durante la Semana Santa y dos de las tres semanas
       de vacaciones, para un total aproximado de 34 semanas de clases efectivas.
     </p>
   </section>
-  <section class="flex">
+  <section class="flex gap-2 mt-4">
     <RegisterButton />
     <button>Conoce nuestros docentes</button>
   </section>
