@@ -1,8 +1,10 @@
 ---
 import SectionCard from "./SectionCard.astro";
+const { id } = Astro.props;
 ---
 
 <main
+  id={id}
   class="h-dvh p-6 flex flex-col items-center justify-center"
   style="mask-image: linear-gradient(black 94%, transparent); background: linear-gradient(to right, rgba(52, 42, 97, 0.7), rgba(52, 42, 97, 0.7)), url('/images/heroImage.webp') no-repeat center center; background-size: cover;"
 >
