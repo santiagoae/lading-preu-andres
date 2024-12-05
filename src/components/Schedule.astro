@@ -9,7 +9,7 @@ const { id } = Astro.props;
   <section class="mt-4">
     <p>
       Nuestras clases están pensadas para adaptarse a las necesidades de los
-      estudiantes, ofreciendo un horario accesibles permita una preparación
+      estudiantes, ofreciendo un horario accesibles que permita una preparación
       completa sin interferir con otras actividades.
     </p>
   </section>
@@ -18,17 +18,19 @@ const { id } = Astro.props;
     <ScheduleCard
       iconBgStyles="bg-sky-blue size-16"
       iconClass="fa-regular fa-clock text-3xl"
-      description="Lunes a jueves: 7:30 p.m. a 9:30 p.m."
+      description="Lunes a jueves: 7:30 p. m. a 9:30 p. m."
       extraInfo="Este horario nocturno asegura que tanto estudiantes que estudien en la mañana o en la tarde, puedan conectarse sin inconvenientes."
     />
     <ScheduleCard
       iconBgStyles="bg-dark-blue size-16"
       iconClass="fa-regular fa-clock text-3xl text-white"
-      description="Viernes cada 15 días: 2:00 p.m. a 5:00 p.m."
+      description="Viernes cada 15 días: 2:00 p. m. a 5:00 p. m."
       extraInfo="Simulacros presenciales en el Colegio Corazonista de Medellín. Estos simulacros son esenciales para que los estudiantes practiquen en un ambiente real de examen y midan su progreso de manera efectiva."
     />
   </section>
   <CallToActionButtons>
-    <a href="#classes"><button>Metodología de clases en vivo</button></a>
+    <a href="#classes "
+      ><button class="md:text-sm">Metodología de clases en vivo</button></a
+    >
   </CallToActionButtons>
 </main>

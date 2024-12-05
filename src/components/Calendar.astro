@@ -7,16 +7,14 @@ const { id } = Astro.props;
 
 <main id={id} class="p-6 text-pretty lg:p-20">
   <h1 class="">Calendario</h1>
-  <section
-    class="flex flex-col gap-4 text-pretty mt-4 lg:gap-6 lg:flex-row lg:items-center lg:justify-center"
-  >
-    <p class="lg:w-[450px]">
+  <section class="flex flex-col gap-4 text-pretty mt-4">
+    <p>
       El examen de la Universidad de Antioquia es un reto significativo, por eso
       diseñamos un ciclo de preparación de 9 meses consecutivos para garantizar
       que nuestros estudiantes estén completamente preparados y logren ingresar
       a la carrera de sus sueños en esta prestigiosa universidad.
     </p>
-    <div>
+    <div class="md:flex md:gap-4">
       <CalendarCard
         title="Inicio"
         description="Lunes 20 de enero de 2025"
@@ -26,17 +24,20 @@ const { id } = Astro.props;
         title="Finaliza"
         description="Viernes 17 de octubre"
         iconClass="fa-solid fa-medal text-red-500 text-5xl"
-        extraInfo="(o una semana antes del examen de admisión)."
+        extraInfo="(o una semana antes del examen de admisión.)"
       />
     </div>
   </section>
   <section class="flex flex-col gap-4 text-pretty mt-4 lg:mt-16">
     <p>
-      Habrá recesos únicamente durante la Semana Santa y dos de las tres semanas
-      de vacaciones, para un total aproximado de 34 semanas de clases efectivas.
+      Habrá recesos únicamente durante la Semana Santa, dos de las tres semanas
+      de vacaciones de mitad de año y la semana de receso de octubre. para un
+      total de 33 semanas de clases efectivas.
     </p>
     <CallToActionButtons>
-      <a href="#instructors"><button>Conoce nuestros docentes</button></a>
+      <a href="#instructors"
+        ><button class="md:text-sm">Conoce nuestros docentes</button></a
+      >
     </CallToActionButtons>
   </section>
 </main>
