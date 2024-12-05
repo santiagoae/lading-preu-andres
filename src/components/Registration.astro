@@ -1,4 +1,6 @@
 ---
+import CallToActionButtons from "./CallToActionButtons.astro";
+
 const { id } = Astro.props;
 ---
 
@@ -8,7 +10,7 @@ const { id } = Astro.props;
     <p>
       ¡No dejes pasar la oportunidad de asegurar tu lugar en la Universidad de
       Antioquia! Matricúlate hoy en <span class="text-dark-blue font-rubik-bold"
-        >academikos</span
+        >académikos</span
       > y comienza tu preparación con los mejores docentes y recursos.
     </p>
     <p>
@@ -24,4 +26,5 @@ const { id } = Astro.props;
       tus sueños con nosotros!
     </p>
   </section>
+  <CallToActionButtons />
 </main>
