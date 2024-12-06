@@ -1,0 +1,21 @@
+---
+interface Props {
+  instructorName: string;
+  imgSrc: string;
+  imgAlt: string;
+  bio: string;
+}
+const { instructorName, imgSrc, imgAlt, bio } = Astro.props;
+---
+
+<main class="flex flex-col justify-start text-pretty min-h-72">
+  <h3>{instructorName}</h3>
+  <div class="h-[35rem] md:h-[310px] mb-4">
+    <img
+      src={imgSrc}
+      alt={imgAlt}
+      class="rounded-2xl object-cover h-full w-full"
+    />
+  </div>
+  <p>{bio}</p>
+</main>

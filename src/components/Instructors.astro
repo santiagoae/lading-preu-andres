@@ -1,48 +1,33 @@
 ---
 import CallToActionButtons from "./CallToActionButtons.astro";
+import InstructorCard from "./InstructorCard.astro";
 const { id } = Astro.props;
 ---
 
 <main id={id} class="p-6 lg:p-20">
   <h1>Docentes</h1>
-  <section class="mt-4">
-    <p>
-      <span class="text-dark-blue font-rubik-bold">César Vargas:</span> Filólogo
-      hispanista de la Universidad de Antioquia, maestrando en Estudios Humanísticos
-      de la Universidad Eafit. Con una trayectoria de más de 10 años en preparación
-      para pruebas como Icfes, Saber 11, exámenes de admisión de la UdeA, la Universidad
-      Nacional y Olimpiadas del Conocimiento. Corrector, productor y capacitador
-      de pruebas estandarizadas, además de docente.
-    </p>
-    <img
-      src="https://th.bing.com/th/id/OIP.cDrNUD2bbO2iMdTfastBYwHaFW?rs=1&pid=ImgDetMain"
-      alt="img-profe"
+  <section class="mt-4 grid md:grid-cols-3 gap-4 md:my-14 lg:gap-8">
+    <InstructorCard
+      instructorName="César Vargas"
+      imgSrc="/images/cesar-profe.webp"
+      imgAlt="cesar-profe"
+      bio="Filólogo hispanista de la Universidad de Antioquia, maestrando en Estudios Humanísticos de la Universidad Eafit. Con una trayectoria de más de 10 años en preparación para pruebas como Icfes, Saber 11, exámenes de admisión de la UdeA, la Universidad Nacional y Olimpiadas del Conocimiento. Corrector, productor y capacitador de pruebas estandarizadas, además de docente."
+    />
+
+    <InstructorCard
+      instructorName="Andrés Ramírez"
+      imgSrc="/images/andres-profe.webp"
+      imgAlt="andres-profe"
+      bio="Licenciado en Matemáticas de la Universidad de Antioquia. Magister en Tecnología Educativa y Competencias Digitales de la Universidad de la Rioja. Docente con una trayectoria de más de 10 años de experiencia en preparación para pruebas Saber 11, exámenes de admisión UdeA, Universidad Nacional y Olimpiadas de Matemáticas."
+    />
+
+    <InstructorCard
+      instructorName="Andrea Serna"
+      imgSrc="/images/andrea-profe.webp"
+      imgAlt="andrea-profe"
+      bio="Abogada. Magister en Filosofía de la Universidad La Salle México. Docente universitaria, con más de 5 años de experiencia en preparación para exámenes de admisión Universidad Nacional, UdeA y pruebas saber 11."
     />
   </section>
-  <section>
-    <p>
-      <span class="text-dark-blue font-rubik-bold">Andrés Ramírez:</span
-      >Licenciado en Matemáticas de la Universidad de Antioquia. Magister en
-      Tecnología Educativa y Competencias Digitales de la Universidad de la
-      Rioja. Docente con una trayectoria de más de 10 años de experiencia en
-      preparación para pruebas Saber 11, exámenes de admisión UdeA, Universidad
-      Nacional y Olimpiadas de Matemáticas.
-    </p>
-    <img
-      src="https://th.bing.com/th/id/OIP.cDrNUD2bbO2iMdTfastBYwHaFW?rs=1&pid=ImgDetMain"
-    />
-  </section>
-  <section>
-    <p>
-      <span class="text-dark-blue font-rubik-bold">Andrea Serna:</span> Abogada.
-      Magister en Filosofía de la Universidad La Salle México. Docente universitaria,
-      con más de 5 años de experiencia en preparación para exámenes de admisión Universidad
-      Nacional, UdeA y pruebas saber 11.
-    </p>
-    <img
-      src="https://th.bing.com/th/id/OIP.cDrNUD2bbO2iMdTfastBYwHaFW?rs=1&pid=ImgDetMain"
-      alt="img-profe"
-    />
-  </section>
+
   <CallToActionButtons />
 </main>
