@@ -31,7 +31,9 @@ const { id } = Astro.props;
       Universidad Nacional</small
     >
 
-    <div class="grid grid-cols-3 gap-2 sm:gap-4 md:grid-cols-4">
+    <div
+      class="grid grid-cols-3 gap-2 sm:gap-4 md:grid-cols-4 md:justify-items-center"
+    >
       <SectionCard
         description="Calendario"
         iconClass="fa-regular fa-calendar-days"
@@ -76,6 +78,7 @@ const { id } = Astro.props;
         description="Contacto"
         iconClass="fa-regular fa-address-card"
         reference="contact"
+        lastItem="col-start-2 col-span-2"
       />
     </div>
   </section>

@@ -3,14 +3,15 @@ interface Props {
   description: string;
   iconClass: string;
   reference: string;
+  lastItem?: string;
 }
 
-const { description, iconClass, reference } = Astro.props;
+const { description, iconClass, reference, lastItem = "" } = Astro.props;
 ---
 
 <a
   href=`#${reference}`
-  class="flex flex-col items-center justify-center px-4 py-2 bg-white/10 rounded-md hover:bg-white/20 transition cursor-pointer sm:gap-4 sm:w-[190px] sm:h-[120px]"
+  class=`flex flex-col items-center justify-center px-4 py-2 bg-white/10 rounded-md hover:bg-white/20 transition cursor-pointer sm:gap-4 sm:w-[190px] sm:h-[120px] ${lastItem}`
 >
   <i class=`${iconClass} text-2xl sm:text-[2.5rem]`></i>
   <p class="text-[0.6rem] sm:text-[0.8rem]">{description}</p>
